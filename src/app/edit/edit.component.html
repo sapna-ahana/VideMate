@@ -1,0 +1,19 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Video Id</th>
+      <th>Video Name</th>
+      <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let k of objvideo">
+      <td>{{k._id}}</td>
+      <td>{{k.title}}</td>
+      <td><input type="submit" class="btn btn-danger" value="update" (click)="updateData(k)"/> &nbsp;
+        <input type="submit" class="btn btn-info" value="Delete" (click)="deletData(k)"/> 
+      </td>
+    </tr>
+  </tbody>
+</table>
+

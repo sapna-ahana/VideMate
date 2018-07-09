@@ -1,0 +1,25 @@
+<div class="col-lg-6 pull-center">
+    <form id="feed" name="feed" #VideoDataParameter="ngForm" (ngSubmit)="update(VideoDataParameter.value)">
+        <div class="form-group ">
+            <label>Video Title</label>
+            <input style="display: none" type="text" name="_id" id="_id" class="form-control" ngModel={{_id}} />
+          </div>
+      <div class="form-group ">
+        <label>Video Title</label>
+        <input type="text" name="title" id="title" class="form-control" ngModel={{title}} />
+      </div>
+      <div class="form-group">
+        <label>Video Path</label>
+        <input type="text" name="path" id="path" class="form-control" ngModel={{path}}/>
+      </div>
+      <div class="form-group">
+        <label>Video Description</label>
+        <input type="text" name="description" id="description" class="form-control" ngModel={{description}} />
+  
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Update Video" class="btn btn-outline-danger" />
+  
+      </div>
+    </form>
+  </div>
